@@ -1,0 +1,519 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+   background: #d5d9d9;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header{
+  background: rgba(19,25,33,0.95);
+  color: white;
+  padding: 0.3px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+
+
+/* amazon name logo */
+
+/* search select and search icon container */
+
+.adding{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+  overflow: hidden;
+  width: 680px;
+  height: 45px;
+   border: 3px solid transparent;
+    border-radius: 9px;
+    
+}
+
+.location{
+    cursor: pointer;
+}
+.adding:hover{
+    border: 3px solid #FFBF66;
+    border-radius: 9px;
+}
+
+/* input of search */
+
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+    height: 45px;
+}
+
+/* search button */
+
+
+button{
+  background: #FFBF66;
+  border: none;
+  height: 48px;
+  cursor: pointer;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    outline: none;
+    
+}
+
+
+/* option select */
+select{
+  width: 59px;
+  border: none;
+  background: whitesmoke;
+    height: 45px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    text-align: center;
+    outline: none;
+}
+
+/* signup container full */
+
+.dlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin: 15px;
+}
+
+/* inner container code */
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.signup button{
+    width: 250px;
+    background: #f0c14b;
+    border-radius: 15px;
+    padding: 9px;
+    margin-right: 50px;
+
+   
+}
+
+ #Eve{
+        cursor: pointer;
+    }
+/* inner signup element */
+.product ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.signup h5 a{
+    text-decoration: underline;
+}
+
+/* container for lsit element both */
+
+#drop{
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    position: absolute;
+    z-index: 999;
+    padding: 15px;
+    left: 480px;
+    top: 80px;
+    display: none;
+}
+
+/* list add after java script addevent */
+
+
+#drop.dro{
+    display: grid;
+}
+
+.togg{
+  display: none;
+}
+
+
+/* language container complete */
+
+
+
+#lang-box{
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0px;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    width: 300px;
+    padding: 40px 15px;
+    position: absolute;
+    left: 600px;
+    top: 70px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+
+/*   all inputs in */
+.ch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.hr{
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+
+/* run after event */
+#lang-box.put{
+    display: flex;
+}
+
+/* return tag remove decoration */
+
+.returns a{
+    text-decoration: none;
+    color: white;
+}
+.returns:hover{
+    border: 1px solid white;
+    padding: 9px;
+}
+.returns{
+    border: 1px solid transparent;
+    padding: 9px;
+}
+
+
+.carti:hover{
+    border: 1.5px solid white;
+    padding: 9px;
+}
+
+#Event{
+    cursor: pointer;
+}
+.carti{
+    border: 1.5px solid transparent;
+    padding: 9px;
+    margin-right: 5px;
+}
+/* navbar */
+.navbar{
+    background-color: #232f3e;
+}
+
+/* humberger */
+#humburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3px;
+    padding: 15px 5px;
+    margin-left: 10px;
+    
+}
+.hum{
+    height: 2px;
+    width: 15px;
+    border: none;
+    
+    background: white;
+}
+.part{
+    display: flex;
+    gap: 30px;
+}
+.choose-nav{
+    text-decoration: none;
+    color: white;
+    margin-top: 3px;
+    margin-left: 6px;
+}
+
+/* main navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    width: 100%;
+    height: 38.99px;
+}
+.repub{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    overflow: hidden;
+    padding: 5px;
+
+}
+.repub:hover{
+    border: 1px solid white;
+    padding: 5px;
+}
+.repub .str{
+    color: orange;
+}
+.repub .strin{
+    color: green;
+}
+.all p{
+    color: white;
+    margin-top: 1px;
+}
+.all{
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+    padding: 1px 3px;
+    box-sizing: border-box;
+     border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.all:hover{
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+
+
+
+/*   slide moving new*/
+
+.homeup{
+    background: #232f3e;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+#cross{
+    position: fixed;
+    z-index: 99999;
+    transform: translateX(-390px);
+    transition: transform 0.5s ease 0.3s;
+}
+
+
+
+#slide{
+    height: 100vh;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    transform: translateX(-390px);
+    transition: transform 0.5s ease 0.3s;
+    overflow-y: auto;
+}
+#cross.cross,#slide.show{
+    transform: translateX(0px);
+    transition: transform 0.5s ease 0.3s;
+}
+.human-icon{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    align-self: end;
+}
+.deco{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    align-self: end;
+}
+.cross{
+    align-self: end;
+    position: absolute;
+    left: 345px;
+    top: 15px;
+    font-weight: bold;
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,0.6);
+    transition: opacity 0.5s ease 0.5s;
+    z-index: 99990;
+    pointer-events: none;
+}
+#overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.aheading a,.home a{
+    text-decoration: none;
+    color: black;
+}
+.hah{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.hro{
+    height: 5px;
+    background: #d5d9d9;
+}
+.trending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.trending a{
+    text-decoration: none;
+    color: black;
+}
+
+.you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.you a{
+    text-decoration: none;
+    color: black;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.features a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    overflow: hidden;
+}
+
+
+/* banner images set */
+.cont{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+    height: 400px;
+    max-width: 1465px;
+}
+#leftarow button{
+    background: transparent;
+    color: black;
+    height: 400px;
+    width: 70px;
+    font-size: 30px;
+}
+#rightarow{
+    position: absolute;
+    z-index: 99;
+    right: 0px;
+    background: transparant;
+}
+
+#leftarow{
+    position: absolute;
+    z-index: 99;
+    left: 0px;
+    background: transparant;
+}
+#rightarow button{
+    background-color: transparent;
+    color: black;
+    height: 400px;
+    width: 70px;
+}
+.images{
+    height: 400px;
+    margin: 0;
+    display: flex;
+    transition: transform 3s ease;
+}
+.window{
+    width: 100%;
+    overflow: hidden;
+}
+    .hlw{
+        width: 100%;
+        flex-shrink: 0;
+       
+    }
+.banner{
+    margin-top: 0px;
+}
+
+@media(max-width: 768px){
+    header{
+        flex-wrap: wrap;
+    }
+    .adding{
+        width: 100%;
+        margin-top: 5px;
+    }
+    h4,h5,.lan svg{
+        display: none;
+    }
+    
+}

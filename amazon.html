@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+    <title>Amazon|Clone|Amit</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    
+    <!--overlay hai pure dispay per parda-->
+    
+    <div id="overlay"></div>
+  
+<header>
+    
+ <a href="https://www.amazon.in/ref=nav_logo" class="logo"><svg width="190" height="85" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Amazon text -->
+  <text x="20" y="45"
+        font-size="38"
+        font-family="Arial, Helvetica, sans-serif"
+        fill="white"
+        font-weight="bold">
+    amazon
+  </text>
+
+  <!-- .in (closer) -->
+  <text x="162" y="45"
+        font-size="18"
+        font-family="Arial, Helvetica, sans-serif"
+        fill="white">
+    .in
+  </text>
+
+  <!-- Smile curve (more bend) -->
+  <path d="M35 63 Q120 92 150 63"
+        stroke="#FF8C00"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <!-- Arrow head (upper - smaller, 1px gap) -->
+  <polygon points="201,59 212,63 201,63"
+           fill="#FF8C00"/>
+
+  <!-- Arrow head (lower - smaller, 1px gap) -->
+  <polygon points="201,63 212,63 201,67"
+           fill="#FF8C00"/>
+
+</svg>
+
+</svg></a>
+ <div class="location">
+     <!-- select option for product -->
+     
+ <h6><span>Delevery Location select</span></h6>
+ <h5><span><strong>Update Location</strong></span></h5>
+ </div>
+ <div class="adding">
+     <div>
+ <span>
+    <select id="option" class="choose">
+        <option value="#" class="option">All</option>
+        <option value="https://www.amazon.in/b?ie=UTF8&node=26221819031">All Categories</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1571272031">Clothing & Accessories</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=5122349031">Appliances</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=4772061031">Car & Motorbike</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1571275031">Baby</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1355017031">Beauty</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976390031">Books</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976417031">Movies & TV Shows</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976420031">Electronics</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1380441031">Furniture</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=3704983031">Gift Cards</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=2454179031">Grocery & Gourmet Foods</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1350385031">Health & Personal Care</option>
+  <option value="https://www.amazon.in/Home-Kitchen/b?ie=UTF8&node=976442031">Home & Kitchen</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=5866079031">Industrial & Scientific</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1951049031">Jewellery</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1571278031">Kindle Store</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=2454175031">Lawn & Garden</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=2454170031">Luggage & Bags</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=5311359031">Luxury Beauty</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976446031">Music</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=3677698031">Musical Instruments</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=2454173031">Office Products</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=9574332031">Amazon Pantry</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976393031">Computers & Accessories</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=4740420031">Pet Supplies</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1571284031">Shoes & Handbags</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976452031">Software</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1984444031">Sports, Fitness & Outdoors</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1350381031">Toys & Games</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=976461031">Video Games</option>
+  <option value="https://www.amazon.in/b?ie=UTF8&node=1350388031">Watches</option>
+    </select>
+     
+     <!-- search box input -->
+     
+ </span></div>
+        <input type="text" placeholder="Search Amazon.in" name="product">
+         <div><button type="submit">
+             
+             <!-- search icon code-->
+             
+             <svg class="svg" width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="30" fill="#FFBF66"/>
+  <circle cx="17" cy="14" r="6" stroke="black" stroke-width="2" fill="none"/>
+  <line x1="21.5" y1="18.5" x2="28" y2="24" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg></button>
+         </div>
+     
+     <!--language select choose -->
+     
+     
+     </div>
+<div id="Event">
+    <div class="lan">
+        
+        <!-- tiranga icon cide -->
+        
+    <svg width="30" height="20" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+  <!-- Saffron -->
+  <rect x="0" y="0" width="20" height="3.33" fill="#FF9933"/>
+
+  <!-- White -->
+  <rect x="0" y="3.33" width="20" height="3.34" fill="#FFFFFF"/>
+
+  <!-- Green -->
+  <rect x="0" y="6.67" width="20" height="3.33" fill="#138808"/>
+
+  <!-- Ashoka Chakra (simplified) -->
+  <circle cx="10" cy="5" r="1.2" stroke="#000080" stroke-width="0.4" fill="none"/>
+</svg><span><h4><strong>EN</strong></h4></span></div>
+</div>
+
+<!--- signup code -->
+
+
+<div id="Eve">
+    <h5>hallo,Sign In</h5>
+    <h4><strong>Account & Lists</strong></h4>
+</div>
+
+<!-- returns head tag -->
+
+<div class="returns">
+    <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fyour-orders%2Forders%3Fref_%3Dnav_orders_first&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_retail_yourorders_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+    <h5>Returns</h5>
+    <h4><strong>&Order</strong></h4></a>
+</div>
+<div class="carti">
+    
+    <!--- cart icon code -->
+    
+    <a href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart">
+    <svg width="60" height="50" viewBox="0 0 60 50" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Cart body -->
+  <polyline points="5,8 10,8 15,30 45,30"
+            fill="none"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+
+  <!-- Basket -->
+  <rect x="18" y="14" width="22" height="14"
+        fill="none"
+        stroke="white"
+        stroke-width="3"/>
+
+  <!-- Wheels -->
+  <circle cx="22" cy="36" r="3" fill="white"/>
+  <circle cx="38" cy="36" r="3" fill="white"/>
+
+  <!-- Item count -->
+  <text x="42" y="12"
+        font-size="14"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="bold"
+        fill="#FF8C00">
+    0
+  </text>
+
+</svg>
+    </a>
+</div>
+</header>
+
+<!-- code for hide session language signup-->
+
+
+
+<section>
+    
+    <!-- language choose-->
+    
+    <div class="language">
+<form id="lang-box">
+<p><strong>Change Language</strong></p>
+  <label class="ch">
+    <input type="radio" name="language" checked><span>English – EN</span>
+   
+  </label>
+
+  <hr class="hr">
+
+  <label class="ch">
+    <input type="radio" name="language"><span>हिन्दी – HI</span>
+   
+  </label>
+
+  <label class="ch">
+    <input type="radio" name="language"><span>தமிழ் – TA</span>
+
+  </label>
+  <label class="ch">
+    <input type="radio" name="language"><span>తెలుగు – TE</span>
+   
+  </label>
+
+  <label class="ch">
+    <input type="radio" name="language"><span>ಕನ್ನಡ – KN</span>
+    
+  </label>
+
+  <label class="ch">
+    <input type="radio" name="language"><span>മലയാളം – ML</span>
+    
+  </label>
+
+  <label class="ch">
+    <input type="radio" name="language"><span>বাংলা – BN</span>
+    
+  </label>
+
+  <label class="ch">
+    <input type="radio" name="language"><span>मराठी – MR</span>
+  </label>
+
+        <div><p><svg width="30" height="20" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+  <!-- Saffron -->
+  <rect x="0" y="0" width="20" height="3.33" fill="#FF9933"/>
+
+  <!-- White -->
+  <rect x="0" y="3.33" width="20" height="3.34" fill="#FFFFFF"/>
+
+  <!-- Green -->
+  <rect x="0" y="6.67" width="20" height="3.33" fill="#138808"/>
+
+  <!-- Ashoka Chakra (simplified) -->
+  <circle cx="10" cy="5" r="1.2" stroke="#000080" stroke-width="0.4" fill="none"/>
+</svg> You are shopping on Amazon.in</p></div>
+        <br>
+        <a href="#">Change country/region</a>
+    </form>
+    </div>
+    
+    <!-- signup all things -->
+    
+    <div id="drop">
+        <div class="signup">
+            <button type="submit">Sign In</button>
+            <h5>New costumer? <span><a href="#">Start here</a></span></h5>
+        </div>
+        <div class="dlist">
+        <div class="product">
+            <h4><strong>Your Lists</strong></h4>
+        <ul>
+            <li><a href="https://www.amazon.in/hz/wishlist/ls">Create a Wish List</a></li>
+  <li><a href="https://www.amazon.in/gp/registry/wishlist">Wish from Any Website</a></li>
+  <li><a href="https://www.amazon.in/hz/wishlist/your-lists">Your Lists</a></li>
+  <li><a href="https://www.amazon.in/gp/yourstore">Discover Your Style</a></li>
+  <li><a href="https://www.amazon.in/hz/wishlist/universal">Explore Showroom</a></li>
+        </ul>
+        </div>
+        <div class="product">
+            <h4><strong>Your Account</strong></h4>
+        <ul>       
+  <li><a href="https://www.amazon.in/your-account">Your Account</a></li>
+  <li><a href="https://www.amazon.in/gp/css/order-history">Your Orders</a></li>
+  <li><a href="https://www.amazon.in/gp/css/returns/homepage.html">Your Returns</a></li>
+  <li><a href="https://www.amazon.in/gp/yourstore">Your Recommendations</a></li>
+  <li><a href="https://www.amazon.in/gp/primecentral">Prime Membership</a></li>
+  <li><a href="https://www.amazon.in/gp/help/customer/display.html">Help</a></li>
+  <li><a href="https://www.amazon.in/gp/css/manage-addresses">Your Addresses</a></li>
+  <li><a href="https://www.amazon.in/gp/css/payment">Your Payments</a></li>
+  <li><a href="https://www.amazon.in/ap/signin">Sign In</a></li>
+  <li><a href="https://www.amazon.in/ap/register">Create Account</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- navbar -->
+<section class="navbar">
+    <div class="main-nav">
+        
+        <!-- humburger -->
+        
+        <div id="alll" class="all">
+        <div id="humburger">
+            <div class="hum"></div>
+            <div class="hum"></div>
+            <div class="hum"></div>
+        </div>
+            <div><p><strong>All</strong></p></div>
+    </div>
+        
+        <!-- nav main bar -->
+        .
+        <nav class="part">
+    <a href="https://www.amazon.in/fresh" class="choose-nav">Fresh</a>
+
+    <a href="https://www.amazon.in/minitv" class="choose-nav">MX Player</a>
+
+    <a href="https://sellercentral.amazon.in/" class="choose-nav">Sell</a>
+
+    <a href="https://www.amazon.in/gp/bestsellers" class="choose-nav">Bestseller</a>
+
+    <a href="https://www.amazon.in/mobile-phones/b?ie=UTF8&node=1389401031" class="choose-nav">Mobiles</a>
+
+    <a href="https://www.amazon.in/gp/goldbox" class="choose-nav">Today's Deals</a>
+</nav>
+    </div>
+    <div class="nav-apart">
+        <a class="repub" href="https://www.amazon.in/events/greatrepublicdaysale/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=055732a9-7864-4015-8faa-0e70902d216d&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=PX5G8DSQ0ENNHRC7HTK0"><h5><span class="str"><strong>  Great  </strong></span> <span><strong>  Republic Day  </strong></span> <span class="strin"><strong>  Sale  </strong></span> | <span><strong> Start 16th jan></strong></span></h5>.</a>
+    </div>
+</section>
+<!-- slide baar code-->
+<div id="cross">
+    
+         
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <line x1="4" y1="4" x2="20" y2="20" stroke="white" stroke-width="2"/>
+  <line x1="20" y1="4" x2="4" y2="20" stroke="white" stroke-width="2"/>
+            </svg>   
+    
+</div>
+
+<section id="slide">
+    
+     <div class="homeup">
+         
+         
+    <a class="deco" href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fyourstore%2Fhome%2F%3Fie%3DUTF8%26ref_%3Dnavm_em_hd_re_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=anywhere_v2_in&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ref_=navm_em_hd_clc_signin">
+   
+        <div class="human-icon">
+            <p style="color: white;">Sign in</p><span><p><svg width="24" height="24" viewBox="0 0 24 24"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Head -->
+  <circle cx="12" cy="8" r="4"
+          fill="none"
+          stroke="white"
+          stroke-width="2"/>
+
+  <!-- Body -->
+  <path d="M4 20c0-3.5 3.5-6 8-6s8 2.5 8 6"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg></p>
+        </div>
+        </a>
+        <div class="browser">
+             <h2 style="color: white;"><strong>Browser</strong></h2><span>
+                <h1 style="color: white;">Amazon</h1>
+            </span>
+        </div>
+        </div>
+    </div>
+    <div class="hah">
+        <div class="aheading">
+            <a href="https://www.amazon.in/?ref_=navm_em_header_home"><h3>Amazon Home</h3></a>
+    </div>
+    <div class="home">
+        <a href="https://www.amazon.in/?ref_=navm_em_header_home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 11L12 4L20 11V20H15V14H9V20H4V11Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg></a>
+    </div>
+</div>
+    <hr class="hro">
+    <div class="trending">
+        <h3>Trending</h3>
+        
+        <a href="https://www.amazon.in/gp/bestsellers">Best Sellers</a>
+<a href="https://www.amazon.in/gp/new-releases">New Releases</a>
+<a href="https://www.amazon.in/gp/movers-and-shakers">Movers & Shakers</a>
+    </div>
+    <hr class="hro">
+    <div class="you">
+        <h3> Top Categories For You</h3>
+        
+        <a href="https://www.amazon.in/mobile-phones/b?node=1389401031">Mobiles</a>
+
+<a href="https://www.amazon.in/electronics/b?node=976419031">Electronics</a>
+
+<a href="https://www.amazon.in/fashion/b?node=6648217031">Fashion</a>
+
+<a href="https://www.amazon.in/home-kitchen/b?node=976442031">Home & Kitchen</a>
+
+<a href="https://www.amazon.in/grocery-foods/b?node=2454178031">Grocery</a>
+        
+    </div>
+    <hr class="hro">
+    <div class="features">
+        <h3>Programs & Features</h3>
+        
+        <a href="https://www.amazon.in/gp/goldbox">Today's Deals</a>
+
+<a href="https://www.amazon.in/b?node=4595087031">Amazon Bazaar</a>
+
+<a href="https://www.amazon.in/business">Amazon Business</a>
+
+<a href="https://www.amazon.in/amazonpay">Amazon Pay</a>
+
+<a href="https://www.amazon.in/launchpad">Amazon Launchpad</a>
+
+<a href="https://www.amazon.in/handloom-and-handicrafts/b?node=6550092031">
+  Handloom and Handicrafts
+</a>
+
+<a href="https://www.amazon.in/saheli">Amazon Saheli</a>
+
+<a href="https://www.amazon.in/amazoncustom">Amazon Custom</a>
+
+<a href="https://www.amazon.in/amazonprime">Try Prime</a>
+
+<a href="https://www.amazon.in/deals?ref_=nav_cs_gb">Buy more, Save more</a>
+
+<a href="https://sellercentral.amazon.in/">Sell on Amazon</a>
+
+<a href="https://www.amazon.in/international-brands/b?node=6311965031">
+  International Brands
+</a>
+    </div>
+    
+</section>
+
+
+<!-- image banner -->
+<section class="banner">
+    <div class="cont">
+        <div id="leftarow">
+            <button type="submit">
+  <svg width="30" height="40" viewBox="0 0 24 24" fill="none">
+    <path d="M15 18L9 12L15 6"
+      stroke="black"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>..
+  </svg>
+            </button>
+        </div>
+        <div class="window">
+        <div id="imag" class="images">
+            <img class="hlw" src="image/imgb1.jpeg">
+           <img class="hlw" src="image/imgb2.jpeg">
+            <img class="hlw" src="image/imgb3.jpeg">
+            <img class="hlw" src="image/imgb4.jpeg">
+            <img class="hlw" src="image/imgb5.jpeg">
+        </div>
+        </div>
+        <div id="rightarow">
+            <button type="submit">
+  <svg width="30" height="40" viewBox="0 0 24 24" fill="none">
+    <path d="M9 6L15 12L9 18"
+      stroke="black"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </svg>
+</button>
+        </div>
+    </div>
+    
+    
+</section>
+
+    
+</body>
+<script src="amazon.js"></script>
+
+</html
