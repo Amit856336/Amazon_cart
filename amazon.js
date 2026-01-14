@@ -81,8 +81,10 @@ let left = document.getElementById("leftarow");
 let right = document.getElementById("rightarow");
 let images = document.querySelector(".images");
 let slides = document.querySelectorAll(".hlw");
+let banner = document.querySelector(".window"); 
 
-let index = 0;
+let index = 1;
+let changeimage=`image/imgb${index}`;
 let loaded = 0;
 const lastIndex = slides.length - 1;
 
@@ -98,8 +100,9 @@ slides.forEach(img => {
 
 function change(){
   images.style.transform = `translateX(-${index * 100}%)`;
+   let imgUrl = `image/imgb${index}.jpg`;
+  images.style.setProperty("--shadow-img", `url(${imgUrl})`);
 }
-
 window.addEventListener("load", function () {
   right.addEventListener("click", function () {
     if (loaded !== slides.length) return;
@@ -123,3 +126,14 @@ window.addEventListener("load",function(){
         change();
     });
 })
+let direction = 1;
+setInterval(()=>{
+    index += direction;
+    if(index === lastIndex){
+        direction = -1;
+    }else if(index===0){
+       direction = 1
+    }
+    change();}
+    ,5000
+);
